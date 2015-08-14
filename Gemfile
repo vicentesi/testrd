@@ -10,6 +10,9 @@ gem 'bootstrap-will_paginate', '0.0.6'
 gem 'jquery-rails'
 
 gem 'turbolinks'
+gem 'sass-rails', '~> 5.0'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'sqlite3'
@@ -18,14 +21,6 @@ group :development, :test do
   gem 'guard-spork'
   gem 'childprocess', '0.3.6'
   gem 'spork', '0.9.2'
-end
-
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails', '~> 5.0'
-  gem 'coffee-rails'
-  gem 'uglifier', '1.2.3'
 end
 
 group :test do
