@@ -9,6 +9,8 @@ gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'jquery-rails'
 
+gem 'turbolinks'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.0'
