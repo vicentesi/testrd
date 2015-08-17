@@ -1,8 +1,19 @@
 require_relative '../spec_helper'
 
-describe "GET /static_pages" do
-	it "works! (now write some real specs)" do
-	  get static_pages_index_path
-	  expect(response).to have_http_status(200)
+RSpec.describe "Static Pages" do
+
+	describe "Home Page" do
+		it "should have the content Home" do
+			visit '/static_pages/home'
+			page.should have_title('Evaluation Test Project for R.D. | Home')
+		end
 	end
+
+	describe "About Page" do
+		it "should have the content About" do
+			visit '/static_pages/about'
+			page.should have_title('Evaluation Test Project for R.D. | About')
+		end
+	end
+
 end
