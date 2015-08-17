@@ -7,15 +7,25 @@ by [Vicente Silveira Inácio](https://br.linkedin.com/pub/vicente-silveira-inác
 
 [TestRD](https://testrd.herokuapp.com/)
 
-## Synopsis
-
-...
-
 ## Installation
 
 ...
+bundle install
+
+Run server: (default: [localhost:3000](http://localhost:3000))
+```rails server```
 
 ## Tests
 
 * RSpec
 * Capybara
+* Spork
+* Guard
+
+Running tests:
+```bundle exec rspec spec/[filename]```
+or:
+```time rspec spec/[filename]```
+
+To run guard with spork server, run:
+```bundle exec guard```
