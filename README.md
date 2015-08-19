@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/vicentesi/testrd_gem.svg?branch=master)](https://travis-ci.org/vicentesi/testrd_gem)
+[![Build Status](https://travis-ci.org/vicentesi/testrd_gem.svg?branch=master)](https://travis-ci.org/vicentesi/testrd_gem) [![Coverage Status](https://coveralls.io/repos/vicentesi/testrd/badge.svg?branch=master&service=github)](https://coveralls.io/github/vicentesi/testrd?branch=master)
 
 ## Resultados Digitais Evaluation Test Project
 
