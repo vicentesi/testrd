@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vicentesi/testrd.svg?branch=master)](https://travis-ci.org/vicentesi/testrd)
+
 ## Resultados Digitais Evaluation Test Project
 
 This project is design as part of the Resultados Digitais Evaluation Project.
