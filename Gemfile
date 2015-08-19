@@ -24,6 +24,7 @@ group :development, :test do
   gem 'childprocess', '0.3.6'
   gem 'spork'
   gem 'spork-rails'
+  gem 'coveralls'
 end
 
 group :test do

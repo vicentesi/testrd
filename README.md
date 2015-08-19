@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/vicentesi/testrd.svg?branch=master)](https://travis-ci.org/vicentesi/testrd)
+[![Build Status](https://travis-ci.org/vicentesi/testrd_gem.svg?branch=master)](https://travis-ci.org/vicentesi/testrd_gem)
 
 ## Resultados Digitais Evaluation Test Project
 
