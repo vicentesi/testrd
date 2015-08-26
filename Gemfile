@@ -15,7 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'uglifier', '>= 1.3.0'
 
 # my gem
-gem 'testrd_gem', '~> 0.1.0'
+gem 'testrd_gem', '>= 0.3.0'
 
 group :development, :test do
   gem 'sqlite3'

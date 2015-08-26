@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get   '/new'    => 'leads#new'
   get   '/leads'  => 'leads#index'
+  post  '/new'    => 'leads#create'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
