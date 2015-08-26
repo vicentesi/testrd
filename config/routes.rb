@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get   '/leads'  => 'leads#index'
   get   '/leads/integrate/:id'  => 'leads#integrate'
 
-
+  delete '/leads/delete/:id'  => 'leads#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
