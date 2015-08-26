@@ -181,6 +181,8 @@
         null,
         1,
         1,
+        1,
+        null,
         null,
         null,
         null,
@@ -243,9 +245,9 @@
         null,
         null,
         1,
-        8,
-        8,
-        1,
+        7,
+        7,
+        0,
         null,
         7,
         null,
@@ -264,12 +266,6 @@
         1,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
         null
       ],
       "/home/dev/Documents/dev/rails_projects/testrd/spec/rails_helper.rb": [
@@ -384,13 +380,12 @@
         null,
         null
       ],
-      "/home/dev/Documents/dev/rails_projects/testrd/app/controllers/leads_controller.rb": [
+      "/home/dev/Documents/dev/rails_projects/testrd/app/controllers/static_pages_controller.rb": [
+        1,
         1,
         null,
-        1,
         null,
         1,
-        null,
         null,
         null
       ],
@@ -400,17 +395,8 @@
         null,
         1,
         null
-      ],
-      "/home/dev/Documents/dev/rails_projects/testrd/app/controllers/static_pages_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null
       ]
     },
-    "timestamp": 1440551992
+    "timestamp": 1440615469
   }
 }
