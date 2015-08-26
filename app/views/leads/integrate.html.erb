@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+  <h1>Integrate <%= @lead[:name] %> with Salesforce</h1>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @lead[:name] %>
+    <br>
+    <strong>Last name:</strong>
+    <%= @lead[:last_name] %>
+    <br>
+    <strong>Email:</strong>
+    <%= @lead[:email] %>
+    <br>
+    <strong>Company:</strong>
+    <%= @lead[:company] %>
+    <br>
+    <strong>Job title:</strong>
+    <%= @lead[:job_title] %>
+    <br>
+    <strong>Phone:</strong>
+    <%= @lead[:phone] %>
+    <br>
+    <strong>Website:</strong>
+    <%= @lead[:website] %>
+  </p>
+
+  <%= link_to 'Back', leads_path %>
+
+</div>

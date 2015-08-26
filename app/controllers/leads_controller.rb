@@ -5,6 +5,11 @@ class LeadsController < ApplicationController
   def new
   end
 
+  def integrate
+    id = Integer(params[:id])
+    @lead = TestrdGem::Lead.show(id)
+  end
+
   def index
     @leads = TestrdGem::Lead.all()
   end

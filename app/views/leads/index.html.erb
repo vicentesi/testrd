@@ -8,6 +8,7 @@
   <table class="table table-striped">
     <thead>
       <tr>
+        <th>Id</th>
         <th>Name</th>
         <th>Last name</th>
         <th>Email</th>
@@ -22,6 +23,7 @@
     <tbody>
       <% @leads.each do |lead| %>
         <tr>
+          <td><%= lead[:id] %></td>
           <td><%= lead[:name] %></td>
           <td><%= lead[:last_name] %></td>
           <td><%= lead[:email] %></td>
@@ -29,9 +31,12 @@
           <td><%= lead[:job_title] %></td>
           <td><%= lead[:phone] %></td>
           <td><%= lead[:website] %></td>
+          <td><%= link_to "Integrate", 'leads/integrate/' + lead[:id].to_s, class: "btn btn-lg btn-primary" %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
+
+  <%= link_to 'New Lead', new_path %>
 
 </div>

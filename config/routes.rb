@@ -5,8 +5,10 @@ Rails.application.routes.draw do
   get   '/about'  => 'static_pages#about'
 
   get   '/new'    => 'leads#new'
-  get   '/leads'  => 'leads#index'
   post  '/new'    => 'leads#create'
+  get   '/leads'  => 'leads#index'
+  get   '/leads/integrate/:id'  => 'leads#integrate'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
