@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<p id="noticerr"><%= notice %></p>
 
 <div class="jumbotron">
   <h1>Integrate <%= @lead[:name] %> with Salesforce</h1>
@@ -28,7 +28,7 @@
     </div>
 
     <div class="col-md-6">
-      <%= form_for :leadtest do |f| %>
+      <%= form_for :lead_integrate do |f| %>
 
           <div class="field">
             <%= f.label :username %><br>

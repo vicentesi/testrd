@@ -10,6 +10,15 @@ class LeadsController < ApplicationController
     @lead = TestrdGem::Lead.show(id)
   end
 
+  def integrate_submit
+    lead_integrate = params[:lead_integrate]
+    begin
+      @integration_result = TestrdGem::Lead.integrate(lead_integrate[:username],lead_integrate[:password],lead_integrate[:token])
+    rescue Exception => ex
+      redirect_to '/leads/integrate/' + params[:id], notice: ex.to_s
+    end
+  end
+
   def index
     @leads = TestrdGem::Lead.all()
   end

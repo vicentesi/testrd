@@ -6,8 +6,10 @@ Rails.application.routes.draw do
 
   get   '/new'    => 'leads#new'
   post  '/new'    => 'leads#create'
+
   get   '/leads'  => 'leads#index'
   get   '/leads/integrate/:id'  => 'leads#integrate'
+  post  '/leads/integrate/:id'  => 'leads#integrate_submit'
 
   delete '/leads/delete/:id'  => 'leads#destroy'
 
