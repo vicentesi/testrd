@@ -3,29 +3,53 @@
 <div class="jumbotron">
   <h1>Integrate <%= @lead[:name] %> with Salesforce</h1>
 
-  <p>
-    <strong>Name:</strong>
-    <%= @lead[:name] %>
-    <br>
-    <strong>Last name:</strong>
-    <%= @lead[:last_name] %>
-    <br>
-    <strong>Email:</strong>
-    <%= @lead[:email] %>
-    <br>
-    <strong>Company:</strong>
-    <%= @lead[:company] %>
-    <br>
-    <strong>Job title:</strong>
-    <%= @lead[:job_title] %>
-    <br>
-    <strong>Phone:</strong>
-    <%= @lead[:phone] %>
-    <br>
-    <strong>Website:</strong>
-    <%= @lead[:website] %>
-  </p>
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Name:</strong><br>
+      <%= @lead[:name] %>
+      <br>
+      <strong>Last name:</strong><br>
+      <%= @lead[:last_name] %>
+      <br>
+      <strong>Email:</strong><br>
+      <%= @lead[:email] %>
+      <br>
+      <strong>Company:</strong><br>
+      <%= @lead[:company] %>
+      <br>
+      <strong>Job title:</strong><br>
+      <%= @lead[:job_title] %>
+      <br>
+      <strong>Phone:</strong><br>
+      <%= @lead[:phone] %>
+      <br>
+      <strong>Website:</strong><br>
+      <%= @lead[:website] %>
+    </div>
 
-  <%= link_to 'Back', leads_path %>
+    <div class="col-md-6">
+      <%= form_for :leadtest do |f| %>
 
+          <div class="field">
+            <%= f.label :username %><br>
+            <%= f.text_field :username, class:'form-control', required:'true'%>
+          </div>
+          <div class="field">
+            <%= f.label :password %><br>
+            <%= f.password_field :password, class:'form-control', required:'true'%>
+          </div>
+          <div class="field">
+            <%= f.label :token %><br>
+            <%= f.text_field :token, class:'form-control', required:'true'%>
+          </div>
+          <br>
+          <div class="actions">
+            <%= f.submit %>
+          </div>
+
+      <% end %>
+      <br>
+      <%= link_to 'Back', leads_path %>
+    </div>
+  </div>
 </div>

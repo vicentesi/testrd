@@ -17,7 +17,7 @@ class LeadsController < ApplicationController
   def destroy
     id = Integer(params[:id])
     TestrdGem::Lead.delete(id)
-    redirect_to leads_path, notice: 'Lead was successfully destroyed.'
+    redirect_to leads_path, notice: 'Lead was successfully deleted.'
   end
 
   def create
@@ -30,4 +30,5 @@ class LeadsController < ApplicationController
       render 'leads/new'
     end
   end
+
 end
