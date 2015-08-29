@@ -45,23 +45,6 @@ RSpec.describe "LeadsPages", type: :request do
       expect(page).to have_content "All Leads"
     end
 
-    it "deletes a lead" do
-      click_link "New Lead"
-
-      fill_in 'Name', with: "foo"
-      fill_in 'Last name', with: "bar"
-      fill_in 'Email', with: "test@email.com"
-      fill_in 'Company', with: "co"
-      fill_in 'Job title', with: "555-5555"
-      fill_in 'Phone', with: "555-5555"
-      fill_in 'Website', with: "site"
-
-      click_button "Save Lead"
-      click_on "Delete"
-
-      expect(flash[:alert]).not_to be nil
-    end
-
     it "create a lead" do
       click_link "New Lead"
       expect(page).to have_content "New Lead"
