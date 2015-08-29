@@ -32,7 +32,7 @@
           <td><%= lead[:phone] %></td>
           <td><%= lead[:website] %></td>
           <td><%= link_to "Integrate", 'leads/integrate/' + lead[:id].to_s, class: "btn btn-primary" %>
-          <td><%= link_to 'Delete', 'leads/delete/' + lead[:id].to_s, method: :delete, class: "btn btn-primary", data: { confirm: 'Are you sure?' } %></td></td>
+          <td><%= link_to 'Delete', 'leads/delete/' + lead[:id].to_s, class: "btn btn-primary", data: { confirm: 'Are you sure?' } %></td></td>
         </tr>
       <% end %>
     </tbody>
