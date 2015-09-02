@@ -11,7 +11,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'uglifier', '>= 1.3.0'
 
 # my gem
-gem 'testrd_gem', '>= 1.1.0'
+gem 'testrd_gem', '>= 1.1.1'
 #gem 'testrd_gem', :path => '../testrd_gem'
 
 group :development, :test do
