@@ -23,16 +23,16 @@
     <tbody>
       <% @leads.each do |lead| %>
         <tr>
-          <td><%= lead[:id] %></td>
-          <td><%= lead[:name] %></td>
-          <td><%= lead[:last_name] %></td>
-          <td><%= lead[:email] %></td>
-          <td><%= lead[:company] %></td>
-          <td><%= lead[:job_title] %></td>
-          <td><%= lead[:phone] %></td>
-          <td><%= lead[:website] %></td>
-          <td><%= link_to "Integrate", 'leads/integrate/' + lead[:id].to_s, class: "btn btn-primary" %>
-          <td><%= link_to 'Delete', 'leads/delete/' + lead[:id].to_s, class: "btn btn-primary", data: { confirm: 'Are you sure?' } %></td></td>
+          <td><%= lead["id"] %></td>
+          <td><%= lead["name"] %></td>
+          <td><%= lead["last_name"] %></td>
+          <td><%= lead["email"] %></td>
+          <td><%= lead["company"] %></td>
+          <td><%= lead["job_title"] %></td>
+          <td><%= lead["phone"] %></td>
+          <td><%= lead["website"] %></td>
+          <td><%= link_to "Integrate", 'leads/integrate/' + lead["id"].to_s, class: "btn btn-primary" %>
+          <td><%= link_to 'Delete', 'leads/delete/' + lead["id"].to_s, class: "btn btn-primary", data: { confirm: 'Are you sure?' } %></td></td>
         </tr>
       <% end %>
     </tbody>
