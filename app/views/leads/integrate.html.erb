@@ -4,52 +4,68 @@
   <h1>Integrate <%= @lead["name"] %> with Salesforce</h1>
 
   <div class="row">
-    <div class="col-md-6">
-      <strong>Name:</strong><br>
-      <%= @lead["name"] %>
-      <br>
-      <strong>Last name:</strong><br>
-      <%= @lead["last_name"] %>
-      <br>
-      <strong>Email:</strong><br>
-      <%= @lead["email"] %>
-      <br>
-      <strong>Company:</strong><br>
-      <%= @lead["company"] %>
-      <br>
-      <strong>Job title:</strong><br>
-      <%= @lead["job_title"] %>
-      <br>
-      <strong>Phone:</strong><br>
-      <%= @lead["phone"] %>
-      <br>
-      <strong>Website:</strong><br>
-      <%= @lead["website"] %>
-    </div>
-
-    <div class="col-md-6">
-      <%= form_for :lead_integrate do |f| %>
-
+    <%= form_for :lead_integrate do |f| %>
+      <div class="col-md-6">
+          <strong>Map?</strong>
           <div class="field">
-            <%= f.label :username %><br>
-            <%= f.text_field :username, class:'form-control', required:'true'%>
+            <%= f.check_box :name_mapping, {}, "true", "false" %>
+            <strong>Name:</strong>
+            <%= @lead["name"] %>
           </div>
           <div class="field">
-            <%= f.label :password %><br>
-            <%= f.password_field :password, class:'form-control', required:'true'%>
+            <%= f.check_box :last_name_mapping, {:checked => true, :disabled => true}, "true", "false" %>
+            <strong>Last name:</strong>
+            <%= @lead["last_name"] %>
           </div>
           <div class="field">
-            <%= f.label :token %><br>
-            <%= f.text_field :token, class:'form-control', required:'true'%>
+            <%= f.check_box :email_mapping, {}, "true", "false" %>
+            <strong>Email:</strong>
+            <%= @lead["email"] %>
           </div>
-          <br>
-          <div class="actions">
-            <%= f.submit %>
+          <div class="field">
+            <%= f.check_box :company_mapping, {:checked => true, :disabled => true}, "true", "false" %>
+            <strong>Company:</strong>
+            <%= @lead["company"] %>
           </div>
+          <div class="field">
+            <%= f.check_box :job_title_mapping, {}, "true", "false" %>
+            <strong>Job title:</strong>
+            <%= @lead["job_title"] %>
+          </div>
+          <div class="field">
+            <%= f.check_box :phone_mapping, {}, "true", "false" %>
+            <strong>Phone:</strong>
+            <%= @lead["phone"] %>
+          </div>
+          <div class="field">
+            <%= f.check_box :website_mapping, {}, "true", "false" %>
+            <strong>Website:</strong>
+            <%= @lead["website"] %>
+          </div>
+      </div>
 
-      <% end %>
-      <br>
-      <%= link_to 'Back', leads_path %>
-    </div>
+      <div class="col-md-6">
+        <div class="field">
+          <%= f.label :username %><br>
+          <%= f.text_field :username, class:'form-control', required:'true'%>
+        </div>
+        <div class="field">
+          <%= f.label :password %><br>
+          <%= f.password_field :password, class:'form-control', required:'true'%>
+        </div>
+        <div class="field">
+          <%= f.label :token %><br>
+          <%= f.text_field :token, class:'form-control', required:'true'%>
+        </div>
+        <br>
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+        <br>
+        <%= link_to 'Back', leads_path %>
+      </div>
+
+    <% end %>
+
   </div>
 </div>
