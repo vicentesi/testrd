@@ -26,7 +26,7 @@ RSpec.describe "LeadsPages", type: :request do
       fill_in 'Website', with: "site"
 
       click_button "Save Lead"
-      click_link "Delete"
+      click_link "Delete", match: :first
     end
 
     it "integrate a lead" do
@@ -40,7 +40,7 @@ RSpec.describe "LeadsPages", type: :request do
       fill_in 'Website', with: "site"
       click_button "Save Lead"
 
-      click_link "Integrate"
+      click_link "Integrate", match: :first
       expect(page).to have_content "Salesforce"
     end
 
